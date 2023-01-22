@@ -21,7 +21,8 @@ section{
 }
 
 .imgAdd{
-    max-width: 50%;
+    max-width: 500px;
+    max-height: 300px;
     overflow-x: hidden;
-    border-radius: 50%;
+    border-radius: 100%;
 }
