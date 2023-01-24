@@ -5,8 +5,7 @@ function verificar() {
     var anoNascimento = Number(document.getElementById("txtano").value);
     console.log(anoNascimento);
 
-    var res = document.getElementById("res"); //div com a resposta
-
+    
     if (anoNascimento <= 1900 || anoNascimento > dataAtual) {
         alert("[ERRO]Verifique os dados e tente novamente.");
     
@@ -31,7 +30,7 @@ function verificar() {
             } else if (idade >= 10  && idade < 15) {
                 //adolescente
                 img.setAttribute('src', './img/adolescente-m.jpg');
-            } else if (idade >= 15 ) {
+            } else if (idade >= 15 && idade < 30 ) {
                 //jovem
                 img.setAttribute('src', './img/jovem-m.jpg');
             } else if (idade >= 30 && idade < 50 ){
@@ -42,7 +41,7 @@ function verificar() {
                 img.setAttribute('src', './img/idoso-m.jpg');
             };
 
-
+                                                //pq ainda não fopi atribuido? resposta  abaixo
         } else {
             genero = 'Mulher'
             if (idade >= 0 && idade <= 3) {
@@ -54,7 +53,7 @@ function verificar() {
             } else if (idade >= 10  && idade < 15) {
                 //adolescente
                 img.setAttribute('src', './img/adolescente-f.jpg');
-            } else if (idade >= 15 ) {
+            } else if (idade >= 15 && idade < 30 ) {
                 //jovem
                 img.setAttribute('src', './img/jovem-f.jpg');
             } else if (idade >= 30 && idade < 50 ){
@@ -66,7 +65,11 @@ function verificar() {
             };
         };
         console.log(genero);                             //testando genero
+
         
+        var res = document.getElementById("res"); //div com a resposta
+        res.innerHTML = ` <p>Sua idade é ${idade} anos e você é ${genero}</p>` //resposta na tela junto da foto
+        res.appendChild(img); //add imagem
     }
     
 }
