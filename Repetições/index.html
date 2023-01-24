@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Repetições</title>
+</head>
+<body>
+    <header> <h1>VAMOS CONTAR</h1> </header>
+
+    <section>
+        <div>
+            <p>Início: <input type="number" name="inicio" id="inicio" placeholder="1" required></p>
+            <p>Fim: <input type="number" name="fim" id="fim" required placeholder="10"></p>
+            <p>Passo: <input type="number" name="passo" id="passo" required placeholder="1"></p>
+            <button type="submit" value="contar" onclick="contar()">contar</button>
+        </div>
+
+        <div >
+            <p id="res"> preparando a contagem... </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Ruan Reis - 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
