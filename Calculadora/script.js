@@ -9,8 +9,9 @@ function calcular() {
     if (numero < 0) {
         alert("[ERRO] Numero inválido: MINÍMO É 0 ");
     } else {
+        multi.setAttribute("id", "borda"); // essa aqui o ai fez sozinho!
         for (var c = 0; c <= 10; c++){
-            multi.innerHTML += `${numero} x ${c} = ${numero * c} `;            
+            multi.innerHTML += `${numero} x ${c} = ${numero * c} <br>`;            
         }
     }
 }
