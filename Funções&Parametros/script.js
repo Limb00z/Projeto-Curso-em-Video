@@ -19,6 +19,14 @@ function inLista(n, l) {
     }
 };
 
+num.addEventListener('keyup', function(e){
+    var key = e.which || e.keyCode;
+    if (key == 13) { // codigo da tecla enter
+      // colocas aqui a tua função a rodar ///// Ao pressionar botão enter, acionar função adicionar()
+      adicionar()
+    }
+  });
+
 function adicionar() {
     if (isNumero(num.value) && !inLista(num.value, valores)) {
         valores.push(Number(num.value));
