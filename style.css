@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(45, 107, 173);
+    font: normal 15pt Arial;
+    overflow-x: hidden;
+}
+
+header{
+    color: aliceblue;
+    text-align: center;
+}
+
+h1{
+    border: 3px solid black;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 20px;
+    text-transform: uppercase;
+}
+section{
+     display: flex;
+     flex-wrap: wrap;  
+}
+
+div{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* #img {
+    width: 250px;
+    height: 350px; 
+}*/
+
+footer{
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    *{
+        width: 400px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+}
